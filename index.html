@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object JS</title>
+</head>
+<body>
+    <style>
+        body{
+            border: 5px solid black;
+            border-radius: 10px;
+            background-color: chocolate;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="color: darkblue;  text-decoration: underline; " >Objects</h1>
+    </center>
+    <center>
+        <div class="box"  id="box_1">
+            <h2>1. Create a Function</h2>
+        <pre style="font-size: 15px; ">
+      
+function Check(obj1){
+    obj1.setter= function(){
+      console.log(obj1.name)
+    }
+ }
+ 
+  
+       </pre >
+        </div>
+       <hr>
+       <div class="box" id="box_2">
+        <h2>2. Delete a Parameter</h2>
+        <pre style="font-size: 15px ;" >
+            function Check(obj1) {
+                let res= delete obj1.rollno;
+                return "true";
+            }
+            
+    </pre>
+       </div>
+    <hr>
+    <div class="box" id="box_3">
+        <h2>3. Check whether the Package is Dream Package or not</h2>
+    <pre style="font-size: 15px;">
+        function Check(obj1) {
+            if(obj1.salary > 500000) {
+                return "Dream"
+              }
+              else {
+                return "NotDream"
+              } 
+        }
+        
+    </pre>
+    </div>
+    <hr>
+    <div class="box" id="box_4">
+        <h2>4.Check whether the Object has a parameter or not</h2>
+    <pre style="font-size: 15px;">
+       
+function Check(obj1) {
+    let count=0;
+    for(let res in obj1){
+      count++;
+    }
+    if(count!==0){
+      return "true";
+    }
+    else{
+      return "false";
+    }
+}
+
+</pre>
+    </div>
+    <hr>
+    <div class="box" id="box_5">
+        <h2>5. Merge the Objects</h2>
+    <pre style="font-size: 15px;">
+        function Check(obj1,obj2) {
+            let newObject = Object.assign(obj1,obj2);
+           
+              return newObject; 
+        }
+   </pre>
+    </div>
+    <hr>
+    <div class="box" id="box_6">
+        <h2>6. Object Multiplyer</h2>
+    <pre style="font-size: 15px;">
+        function Check(a,obj1) {
+            obj1.id = obj1.id*a;
+                 obj1.houseno = obj1.houseno*a;
+                 return obj1;
+           }
+</pre>
+    </div>
+    <hr>
+    <div class="box" id="box_7">
+        <h2>7. Find the sum of Data Memebers.</h2>
+    <pre style="font-size: 15px;">
+        function Check(obj1) {
+            return (obj1.p1 + obj1.p2 + obj1.p3 )
+        
+      }
+</pre>
+    </div>
+    <hr>
+    <div class="box" id="box_8">
+        <h2>8. Check whether the Objects are same or not. </h2>
+    <pre style="font-size: 15px;">
+        function check(obj1,a,b) {
+            for(let i in obj1){
+              if((obj1.name===a)&&obj1.id===b){
+                return "true";
+              }
+              else{
+                return "false";
+              }
+            } 
+         }
+         
+</pre>
+    </div>
+    
+   
+    </center>
+    
+</body>
+</html>
+</body>
+</html>
